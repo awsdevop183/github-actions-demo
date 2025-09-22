@@ -6,4 +6,7 @@ jobs:
     steps:
       - name: sample command
         run: echo "Hello, world!"
+
+      - name: Print working directory
+        run: pwd
      
