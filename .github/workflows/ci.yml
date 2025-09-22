@@ -15,8 +15,8 @@ jobs:
             pwd
       - name: Run ASCII Art Script
         run: | 
-            chmod +x scripts/asci-script.sh
-            ./scripts/asci-script.sh
+            chmod +x .github/scripts/asci-script.sh
+             sh .github/scripts/asci-script.sh
 
     #   - name: AASCII Art
     #     run : |
