@@ -13,10 +13,10 @@ jobs:
         run: |
             ls -ltra
             pwd
-      - name: Run ASCII Art Script
-        run: | 
-            chmod +x .github/scripts/script.sh
-             sh .github/scripts/script.sh
+    #   - name: Run ASCII Art Script
+    #     run: | 
+    #         chmod +x .github/scripts/script.sh
+    #          sh .github/scripts/script.sh
 
     #   - name: AASCII Art
     #     run : |
