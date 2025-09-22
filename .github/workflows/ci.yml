@@ -8,5 +8,12 @@ jobs:
         run: echo "Hello, world!"
 
       - name: Print working directory
-        run: pwd
+        run: |
+            ls -ltra
+            pwd
+
+      - name: AASCII Art
+        run : |
+            cowsay -f dragon "welcome to github actions Dragon" >> dragon.txt
+            cat dragon.txt
      
