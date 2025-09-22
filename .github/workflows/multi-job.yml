@@ -19,8 +19,9 @@ jobs:
     runs-on: ubuntu-latest
     needs: build
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v2
-
-      - name: Run tests
-        run: ls -al
+      - name: Download artifact
+        uses: actions/download-artifact@v5
+        with:
+          name: dragon-file
+      - name: Read dragon file
+        run: cat dragon.txt
