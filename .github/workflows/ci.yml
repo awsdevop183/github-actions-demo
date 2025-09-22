@@ -14,7 +14,7 @@ jobs:
             ls -ltra
             pwd
       - name: Run ASCII Art Script
-        run: ./asci-script.sh
+        run: ./.github/workflows/asci-script.sh
 
     #   - name: AASCII Art
     #     run : |
