@@ -6,14 +6,18 @@ jobs:
     steps:
       - name: sample command
         run: echo "Hello, world!"
+      - name: Checkout repository
+        uses: actions/checkout@v2
 
       - name: Print working directory
         run: |
             ls -ltra
             pwd
+      - name: Run ASCII Art Script
+        run: ./asci-script.sh
 
-      - name: AASCII Art
-        run : |
-            cowsay -f dragon "welcome to github actions Dragon" >> dragon.txt
-            cat dragon.txt
+    #   - name: AASCII Art
+    #     run : |
+    #         cowsay -f dragon "welcome to github actions Dragon" >> dragon.txt
+    #         cat dragon.txt
      
