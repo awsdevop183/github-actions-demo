@@ -6,6 +6,13 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
+        with:
+            name: dragon.txt
+            path: dragon.txt
+      - name: Upload artifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: my-artifact
     
   test-job:
     runs-on: ubuntu-latest
