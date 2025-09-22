@@ -1,0 +1,9 @@
+name: CI test
+on: [push, pull_request]
+jobs:
+  build:
+    runs-on: [self-hosted]
+    steps:
+      - name: sample command
+        run: echo "Hello, world!"
+     
