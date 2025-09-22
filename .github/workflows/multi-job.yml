@@ -6,11 +6,13 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
+      - name: Create a file
+        run: echo "This is a dragon file" > dragon.txt
            
       - name: Upload artifact
         uses: actions/upload-artifact@v4
         with:
-          name: my-artifact
+          name: dragon-file
           path: dragon.txt
     
   test-job:
